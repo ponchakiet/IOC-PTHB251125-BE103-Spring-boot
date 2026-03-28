@@ -1,0 +1,103 @@
+@RestController
+@RequestMapping("/users")
+public class UserController {
+
+    @Autowired
+    private UserService userService;
+
+    // 1. Lấy toàn bộ danh sách người dùng
+    @GetMapping
+    public ResponseEntity<?> getAllUsers() {
+        List<User> users = userService.findAll();
+        if (users.isEmpty()) {
+            return ResponseEntity.noContent().build();
+        }
+        return new ResponseEntity<>(users, HttpStatus.OK);
+    }
+
+    // 2. Tạo mới người dùng
+    @PostMapping
+    public ResponseEntity<?> createUser(@RequestBody User user) {
+        User createdUser = userService.save(user);
+        return new ResponseEntity<>(createdUser, HttpStatus.CREATED);
+    }
+
+    // 3. Cập nhật vai trò người dùng
+    @PatchMapping("/{id}/role")
+    public ResponseEntity<?> updateRole(@PathVariable Long id, @RequestBody Map<String, String> updates) {
+        String newRole = updates.get("role");
+        User updatedUser = userService.updateRole(id, newRole);
+        if (updatedUser == null) return ResponseEntity.notFound().build();
+        return new ResponseEntity<>(updatedUser, HttpStatus.OK);
+    }
+
+    // 4. Xóa người dùng
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteUser(@PathVariable Long id) {
+        boolean deleted = userService.delete(id);
+        if (!deleted) return ResponseEntity.notFound().build();
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+}
+@RestController
+@RequestMapping("/tasks")
+public class TaskController {
+
+    @Autowired
+    private TaskService taskService;
+
+    // 1. Lấy toàn bộ danh sách công việc
+    @GetMapping
+    public ResponseEntity<?> getAllTasks() {
+        List<Task> tasks = taskService.findAll();
+        return new ResponseEntity<>(tasks, HttpStatus.OK);
+    }
+
+    // 2. Tạo mới công việc
+    @PostMapping
+    public ResponseEntity<?> createTask(@RequestBody Task task) {
+        Task createdTask = taskService.save(task);
+        return new ResponseEntity<>(createdTask, HttpStatus.CREATED);
+    }
+
+    // 3. Cập nhật trạng thái một công việc
+    @PatchMapping("/{id}/status")
+    public ResponseEntity<?> updateStatus(@PathVariable Long id, @RequestBody Map<String, String> updates) {
+        String status = updates.get("status");
+        Task updatedTask = taskService.updateStatus(id, status);
+        if (updatedTask == null) return ResponseEntity.notFound().build();
+        return new ResponseEntity<>(updatedTask, HttpStatus.OK);
+    }
+
+    // 4. Xóa một công việc
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteTask(@PathVariable Long id) {
+        boolean deleted = taskService.delete(id);
+        if (!deleted) return ResponseEntity.notFound().build();
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    // 5 & 6. Tìm công việc theo độ ưu tiên (high) và ID người dùng (1)
+    // Endpoint ví dụ: /tasks/search?priority=high&userId=1
+    @GetMapping("/search")
+    public ResponseEntity<?> searchTasks(
+            @RequestParam(required = false) String priority,
+            @RequestParam(required = false) Long userId) {
+        
+        List<Task> results = taskService.search(priority, userId);
+        return new ResponseEntity<>(results, HttpStatus.OK);
+    }
+}// 7. Liệt kê toàn bộ công việc của 1 người dùng (Trong UserController)
+@GetMapping("/{id}/tasks")
+public ResponseEntity<?> getTasksByUser(@PathVariable Long id) {
+    List<Task> tasks = taskService.findByUserId(id);
+    return new ResponseEntity<>(tasks, HttpStatus.OK);
+}
+
+// 8. Gắn công việc cho người dùng (Trong TaskController)
+@PutMapping("/{taskId}/assign/{userId}")
+public ResponseEntity<?> assignTaskToUser(@PathVariable Long taskId, @PathVariable Long userId) {
+    Task updatedTask = taskService.assignToUser(taskId, userId);
+    if (updatedTask == null) return ResponseEntity.notFound().build();
+    return new ResponseEntity<>(updatedTask, HttpStatus.OK);
+}

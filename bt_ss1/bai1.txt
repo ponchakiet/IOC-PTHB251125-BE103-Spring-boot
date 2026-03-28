@@ -1,0 +1,34 @@
+Quy trình Request - Response: Xem danh sách sản phẩm
+1. Client (Trình duyệt/Người dùng)
+Khi người dùng nhấn vào mục "Xem sản phẩm" hoặc truy cập trang chủ, trình duyệt sẽ thực hiện các bước sau:
+
+URL dự kiến: http://localhost:8080/api/products hoặc http://localhost:8080/products
+
+HTTP Method: GET (Vì đây là thao tác truy xuất dữ liệu, không thay đổi trạng thái hệ thống).
+
+Request Headers: Trình duyệt gửi kèm các thông tin như Accept: application/json hoặc text/html.
+
+2. Server (Spring Boot Application)
+Khi nhận được tín hiệu từ Client, Spring Boot xử lý qua các tầng (Layer) như sau:
+
+Controller (Tầng điều hướng): Lớp ProductController sẽ bắt được Request dựa trên Annotation @GetMapping("/products"). Nó đóng vai trò "tiếp tân", tiếp nhận yêu cầu và chuyển cho bộ phận xử lý.
+
+Service (Tầng logic): ProductService nhận lệnh từ Controller. Tại đây, code sẽ xử lý các logic nghiệp vụ (ví dụ: kiểm tra quyền truy cập, lọc sản phẩm đang giảm giá, hoặc tính toán lại giá tiền).
+
+Repository/DAO: Service gọi xuống tầng Repository để yêu cầu lấy dữ liệu từ nguồn lưu trữ.
+
+3. Database (Cơ sở dữ liệu)
+Trong kịch bản này, chúng ta giả lập bằng Bộ nhớ RAM (In-memory):
+
+Vai trò: Lưu trữ danh sách các Object Product. Thay vì truy vấn SQL vào MySQL hay PostgreSQL, Spring Boot sẽ sử dụng một List<Product> được khởi tạo sẵn trong bộ nhớ.
+
+Hành động: Repository sẽ trả về toàn bộ danh sách (List) các sản phẩm hiện có trong RAM cho Service, sau đó Service đưa ngược lại cho Controller.
+
+4. Response (Phản hồi trả về)
+Sau khi có dữ liệu, Server đóng gói và gửi lại cho Client:
+
+Định dạng: JSON (Phổ biến nhất hiện nay cho các ứng dụng Web hiện đại/Mobile app) hoặc HTML (Nếu sử dụng Thymeleaf/JSP để render giao diện trực tiếp trên Server).
+
+Trạng thái (HTTP Status Code): 200 OK (Thông báo yêu cầu thành công).
+
+Nội dung (Body): Một mảng các đối tượng sản phẩm

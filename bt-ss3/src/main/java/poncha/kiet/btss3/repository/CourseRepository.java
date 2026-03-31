@@ -5,6 +5,7 @@ import poncha.kiet.btss3.model.Course;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class CourseRepository {
@@ -17,4 +18,7 @@ public class CourseRepository {
     }
 
     public List<Course> findAll() { return courses; }
+    public Optional<Course> findById(int id) { return courses.stream().filter(c -> c.getId() == id).findFirst(); }
+    public Course create(Course c) { courses.add(c); return c; }
+    public void delete(Course c) { courses.remove(c); }
 }

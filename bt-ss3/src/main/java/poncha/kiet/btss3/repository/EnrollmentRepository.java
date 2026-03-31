@@ -6,6 +6,7 @@ import poncha.kiet.btss3.model.Enrollment;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class EnrollmentRepository {
@@ -18,4 +19,7 @@ public class EnrollmentRepository {
     }
 
     public List<Enrollment> findAll() { return enrollments; }
+    public Optional<Enrollment> findById(int id) { return enrollments.stream().filter(e -> e.getId() == id).findFirst(); }
+    public Enrollment create(Enrollment e) { enrollments.add(e); return e; }
+    public void delete(Enrollment e) { enrollments.remove(e); }
 }

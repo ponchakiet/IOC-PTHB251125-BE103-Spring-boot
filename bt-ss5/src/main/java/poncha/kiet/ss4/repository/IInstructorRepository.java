@@ -1,0 +1,9 @@
+package poncha.kiet.ss4.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import poncha.kiet.ss4.entity.Instructor;
+
+@Repository
+public interface IInstructorRepository extends JpaRepository<Instructor,Long> {
+}

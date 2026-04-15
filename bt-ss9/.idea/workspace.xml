@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="24825d60-96dc-4d11-a6b4-641af2b9a10f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/LibraryApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/controller/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/controller/BorrowController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/controller/ReaderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/dto/request/BookCreateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/dto/request/BookUpdateStock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/dto/request/BorrowCreate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/dto/request/ReaderCreate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/dto/response/BookResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/dto/response/BorrowResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/dto/response/ErrorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/dto/response/ReaderResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/exception/BadRequestException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/exception/BookAlreadyReturnedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/exception/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/mapper/BookMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/mapper/BorrowMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/mapper/ReaderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/model/Borrow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/model/BorrowStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/model/BorrowTicket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/model/Reader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/repositories/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/repositories/BorrowRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/repositories/ReaderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/service/IBookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/service/IBorrowService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/service/IReaderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/service/implement/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/service/implement/BorrowServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/service/implement/ReaderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/validation/BookIdValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/validation/ExistingBookId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/java/re/edu/validation/FileValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/src/test/java/re/edu/LibraryApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bt-ss8/uploads/2f258195-73c6-41e1-ac84-9d4dd35b8510_Screenshot 2026-03-30 232602.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3CMOLlPakwUZhxKBWISvIOBlWWF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Session9DepartmentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="model.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="re.edu.department.Session9DepartmentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24825d60-96dc-4d11-a6b4-641af2b9a10f" name="Changes" comment="" />
+      <created>1776191921711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776191921711</updated>
+      <workItem from="1776191922038" duration="14000" />
+      <workItem from="1776197314874" duration="5000" />
+      <workItem from="1776267731039" duration="73000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

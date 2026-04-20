@@ -1,0 +1,157 @@
+2026-04-18T08:08:44.720+07:00  INFO 6184 --- [Session11_log] [main] re.edu.Session11LogApplication           : Starting Session11LogApplication using Java 17.0.18 with PID 6184 (C:\Users\admin\IdeaProjects\Session11_log\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Session11_log)
+2026-04-18T08:08:44.723+07:00  INFO 6184 --- [Session11_log] [main] re.edu.Session11LogApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-18T08:08:45.238+07:00  INFO 6184 --- [Session11_log] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-18T08:08:45.278+07:00  INFO 6184 --- [Session11_log] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2026-04-18T08:08:45.691+07:00  INFO 6184 --- [Session11_log] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-04-18T08:08:45.701+07:00  INFO 6184 --- [Session11_log] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18T08:08:45.701+07:00  INFO 6184 --- [Session11_log] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-18T08:08:45.747+07:00  INFO 6184 --- [Session11_log] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 988 ms
+2026-04-18T08:08:45.873+07:00  INFO 6184 --- [Session11_log] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-18T08:08:45.921+07:00  INFO 6184 --- [Session11_log] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-18T08:08:46.319+07:00  INFO 6184 --- [Session11_log] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-18T08:08:46.347+07:00  INFO 6184 --- [Session11_log] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-18T08:08:46.487+07:00  INFO 6184 --- [Session11_log] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7573c7b5
+2026-04-18T08:08:46.489+07:00  INFO 6184 --- [Session11_log] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-18T08:08:46.517+07:00  WARN 6184 --- [Session11_log] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-18T08:08:46.544+07:00  INFO 6184 --- [Session11_log] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-18T08:08:47.291+07:00  INFO 6184 --- [Session11_log] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-18T08:08:47.353+07:00  INFO 6184 --- [Session11_log] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T08:08:47.437+07:00  INFO 6184 --- [Session11_log] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-18T08:08:47.922+07:00  WARN 6184 --- [Session11_log] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-18T08:08:48.219+07:00  INFO 6184 --- [Session11_log] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2026-04-18T08:08:48.268+07:00  INFO 6184 --- [Session11_log] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8088 (http) with context path '/'
+2026-04-18T08:08:48.272+07:00  INFO 6184 --- [Session11_log] [main] re.edu.Session11LogApplication           : Started Session11LogApplication in 3.992 seconds (process running for 4.529)
+2026-04-18T08:08:53.979+07:00  INFO 6184 --- [Session11_log] [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-18T08:08:53.979+07:00  INFO 6184 --- [Session11_log] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-18T08:08:53.980+07:00  INFO 6184 --- [Session11_log] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-18T08:08:54.016+07:00  INFO 6184 --- [Session11_log] [http-nio-8088-exec-2] re.edu.controller.PatientController      : Search patient with name: Nguyen
+2026-04-18T08:08:54.079+07:00 DEBUG 6184 --- [Session11_log] [http-nio-8088-exec-2] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.age,
+        p1_0.name 
+    from
+        patients p1_0 
+    where
+        p1_0.name like ? escape ''
+2026-04-18T08:08:54.103+07:00  INFO 6184 --- [Session11_log] [http-nio-8088-exec-2] r.e.s.implement.PatientServiceImpl       : Found 1 patient(s)
+2026-04-18T08:09:44.569+07:00  INFO 6184 --- [Session11_log] [http-nio-8088-exec-3] re.edu.controller.PatientController      : Received request to add patient: Nguyen Van B
+2026-04-18T08:09:44.569+07:00  INFO 6184 --- [Session11_log] [http-nio-8088-exec-3] r.e.s.implement.PatientServiceImpl       : Processing patient: Nguyen Van B
+2026-04-18T08:09:44.595+07:00 DEBUG 6184 --- [Session11_log] [http-nio-8088-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        patients
+        (age, name) 
+    values
+        (?, ?)
+2026-04-18T08:09:44.613+07:00  INFO 6184 --- [Session11_log] [http-nio-8088-exec-3] r.e.s.implement.PatientServiceImpl       : Patient created successfully: Nguyen Van B
+2026-04-18T08:14:44.958+07:00  INFO 6184 --- [Session11_log] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-18T08:14:45.237+07:00  INFO 6184 --- [Session11_log] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-18T08:14:45.254+07:00  INFO 6184 --- [Session11_log] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T08:14:45.258+07:00  INFO 6184 --- [Session11_log] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-18T08:14:45.268+07:00  INFO 6184 --- [Session11_log] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-18T08:14:50.716+07:00  INFO 18336 --- [Session11_log] [main] re.edu.Session11LogApplication           : Starting Session11LogApplication using Java 17.0.18 with PID 18336 (C:\Users\admin\IdeaProjects\Session11_log\build\classes\java\main started by admin in C:\Users\admin\IdeaProjects\Session11_log)
+2026-04-18T08:14:50.719+07:00  INFO 18336 --- [Session11_log] [main] re.edu.Session11LogApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-18T08:14:51.431+07:00  INFO 18336 --- [Session11_log] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-18T08:14:51.494+07:00  INFO 18336 --- [Session11_log] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2026-04-18T08:14:51.975+07:00  INFO 18336 --- [Session11_log] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8088 (http)
+2026-04-18T08:14:51.988+07:00  INFO 18336 --- [Session11_log] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18T08:14:51.988+07:00  INFO 18336 --- [Session11_log] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-18T08:14:52.044+07:00  INFO 18336 --- [Session11_log] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1270 ms
+2026-04-18T08:14:52.205+07:00  INFO 18336 --- [Session11_log] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-18T08:14:52.263+07:00  INFO 18336 --- [Session11_log] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-18T08:14:52.797+07:00  INFO 18336 --- [Session11_log] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-18T08:14:52.831+07:00  INFO 18336 --- [Session11_log] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-18T08:14:53.000+07:00  INFO 18336 --- [Session11_log] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b3085a3
+2026-04-18T08:14:53.001+07:00  INFO 18336 --- [Session11_log] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-18T08:14:53.042+07:00  WARN 18336 --- [Session11_log] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-18T08:14:53.071+07:00  INFO 18336 --- [Session11_log] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.1
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-18T08:14:54.120+07:00  INFO 18336 --- [Session11_log] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-18T08:14:54.193+07:00  INFO 18336 --- [Session11_log] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T08:14:54.278+07:00  INFO 18336 --- [Session11_log] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-18T08:14:54.877+07:00  WARN 18336 --- [Session11_log] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-18T08:14:55.201+07:00  INFO 18336 --- [Session11_log] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2026-04-18T08:14:55.256+07:00  INFO 18336 --- [Session11_log] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8088 (http) with context path '/'
+2026-04-18T08:14:55.261+07:00  INFO 18336 --- [Session11_log] [main] re.edu.Session11LogApplication           : Started Session11LogApplication in 5.342 seconds (process running for 6.323)
+2026-04-18T08:15:00.921+07:00  INFO 18336 --- [Session11_log] [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-18T08:15:00.923+07:00  INFO 18336 --- [Session11_log] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-18T08:15:00.924+07:00  INFO 18336 --- [Session11_log] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-18T08:15:00.962+07:00  INFO 18336 --- [Session11_log] [http-nio-8088-exec-2] re.edu.controller.PatientController      : Search patient with name: Nguyen
+2026-04-18T08:15:00.963+07:00 ERROR 18336 --- [Session11_log] [http-nio-8088-exec-2] r.edu.exception.GlobalExceptionHandler   : Lỗi hệ thống xảy ra: 
+
+java.lang.ArithmeticException: / by zero
+	at re.edu.service.implement.PatientServiceImpl.findByName(PatientServiceImpl.java:43) ~[main/:na]
+	at re.edu.controller.PatientController.search(PatientController.java:38) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.6.jar:7.0.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.20.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.6.jar:7.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.20.jar:11.0.20]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-04-18T08:18:22.188+07:00  INFO 18336 --- [Session11_log] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-18T08:18:22.491+07:00  INFO 18336 --- [Session11_log] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-18T08:18:22.494+07:00  INFO 18336 --- [Session11_log] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T08:18:22.497+07:00  INFO 18336 --- [Session11_log] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-18T08:18:22.501+07:00  INFO 18336 --- [Session11_log] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
